@@ -1,0 +1,267 @@
+.playfair {
+    font-family: "Philosopher", sans-serif;
+    font-weight: bolder;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+  }
+
+.feturedSection {
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), 
+    url(../images/image-05.webp);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.tick::before {
+  margin-right: 5px;
+  content: '✓ ';
+  color: #17181C; /* Change the color if needed */
+  border-radius: 9999px;
+}
+
+  .iti.iti--allow-dropdown.iti--separate-dial-code {
+    width: 100%;
+}
+
+.gallery-item {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+#lightbox-modal {
+  z-index: 1000;
+}
+
+
+/* gallery */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 50vh;
+  width: 100%;
+}
+
+@media (min-width: 767px) {
+  .mySwiper2 {
+    height: 75vh;
+    width: 100%;
+  }
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .swiper-horizontal {
+  padding-top: 10px !important;
+} */
+
+.hide {
+  display: none;
+}
+
+/* modal */
+.modal, .modalBrochure {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: RGBA(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+/* whats app icon animation */
+
+.btn-whatsapp-pulse {
+	background: #25d366;
+	color: white;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 35px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
+}
+
+@media (min-width: 1024px){
+
+  #contentSecText {
+    font-size: 1.7rem;
+      line-height: 2.5rem;
+  }
+}
+
+
+
+.whatAppImg {
+  max-width: 40px;
+}
+
+.whatsAppBtn {
+  z-index: 50;
+}
+
+.iti__selected-dial-code {
+  color: #9BA3AF;
+}
+
+
+/* Heading Styles */
+.headingMain {
+  color: #4B412C;
+}
+
+/* Subheading Styles */
+.headingSecondary {
+  color: #4B412C; /* Slightly lighter blue for subheadings */
+}
+
+/* Paragraph Styles */
+.paragraph {
+  color: #000000;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #162E35;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #A24C3A;
+  color: #000626;
+}
+
+.featured-section {
+  background-color: #4B412C;
+  color: #FFFFFF;
+}  
+
+/* CSS styles */
+.logo-svg {
+  width: 120px;
+  padding: 5px 0px;
+  transition: width 0.3s ease;
+}
+
+/* Media query for mobile devices */
+@media (min-width: 768px) {
+  .logo-svg {
+    width: 180px;
+  }
+}
+
+.logo-svg.small {
+  width: 100px;
+}
+
+.bgblackopacity {
+  background-color: #000000a0;
+}
